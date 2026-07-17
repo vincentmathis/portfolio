@@ -4,13 +4,13 @@ const projects = [
         title: 'Life',
         description:
             'A visual journey through your lifespan. See how you spend your time, week by week.',
-        href: '/projects/life',
+        href: 'https://life.YOUR_DOMAIN',
         accent: '#0d5c63',
     },
     {
         title: 'ChadGPT',
         description: 'An AI chat with attitude. Powered by Groq, flavored with looksmaxxing.',
-        href: '/projects/chadgpt',
+        href: 'https://chadgpt.YOUR_DOMAIN',
         accent: '#10b981',
     },
 ];
