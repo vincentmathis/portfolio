@@ -1,19 +1,27 @@
 <script lang="ts">
-const projects = [
+import { onMount } from 'svelte';
+
+let projects = $state([
     {
         title: 'Life',
         description:
             'A visual journey through your lifespan. See how you spend your time, week by week.',
-        href: 'https://life.YOUR_DOMAIN',
+        href: '#',
         accent: '#0d5c63',
     },
     {
         title: 'ChadGPT',
         description: 'An AI chat with attitude. Powered by Groq, flavored with looksmaxxing.',
-        href: 'https://chadgpt.YOUR_DOMAIN',
+        href: '#',
         accent: '#10b981',
     },
-];
+]);
+
+onMount(() => {
+    const host = window.location.hostname;
+    projects[0].href = `https://life.${host}`;
+    projects[1].href = `https://chadgpt.${host}`;
+});
 </script>
 
 <svelte:head>
