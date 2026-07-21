@@ -15,6 +15,12 @@ let projects = $state([
         href: '#',
         accent: '#10b981',
     },
+    {
+        title: 'Date Slot',
+        description: 'A playful matchmaking experience. Spin the slot and see who you get.',
+        href: 'https://date-slot.vercel.app',
+        accent: '#f472b6',
+    },
 ]);
 
 onMount(() => {
