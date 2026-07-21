@@ -17,9 +17,16 @@ let projects = $state([
     },
     {
         title: 'Date Slot',
-        description: 'A playful matchmaking experience. Spin the slot and see who you get.',
+        description:
+            'Create a shareable link for your free time slots. Let others book dates with you.',
         href: 'https://date-slot.vercel.app',
         accent: '#f472b6',
+    },
+    {
+        title: "Conway's Game of Life",
+        description: 'A WebGL playground where you can tweak the rules and watch patterns evolve.',
+        href: '#',
+        accent: '#a78bfa',
     },
 ]);
 
@@ -27,6 +34,7 @@ onMount(() => {
     const host = window.location.hostname;
     projects[0].href = `https://life.${host}`;
     projects[1].href = `https://chadgpt.${host}`;
+    projects[3].href = `https://conway.${host}`;
 });
 </script>
 
